@@ -34,6 +34,14 @@ alarm_db_cfg = {
         "DB_NAME": config.ALARM_DB_NAME,
 }
 
+iboxpay_db_cfg = {
+        "DB_HOST": config.IBOXPAY_DB_HOST,
+        "DB_PORT": config.IBOXPAY_DB_PORT,
+        "DB_USER": config.IBOXPAY_DB_USER,
+        "DB_PASS": config.IBOXPAY_DB_PASS,
+        "DB_NAME": config.IBOXPAY_DB_NAME,
+}
+
 def connect_db(cfg):
     try:
         conn = MySQLdb.connect(
@@ -139,3 +147,5 @@ class DB(object):
 
 db = DB(portal_db_cfg)
 alarm_db = DB(alarm_db_cfg)
+iboxpay_db = DB(iboxpay_db_cfg)
+

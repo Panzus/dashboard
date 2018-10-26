@@ -77,5 +77,9 @@ def app_before():
         g.nav_menu = "p_nodata"
     elif path.startswith("/portal/alarm-dash"):
         g.nav_menu = "p_alarm-dash"
+    elif path.startswith("/iboxpay/assets"):
+        g.nav_menu = "i_assets"
+    elif path.startswith("/iboxpay/projects"):
+        g.nav_menu = "i_projects"
     else:
         g.nav_menu = ""

@@ -46,3 +46,4 @@ from view.user import user
 from view.team import team
 from view.dashboard import chart, screen
 from view.portal import *
+from view.iboxpay import assets, projects
